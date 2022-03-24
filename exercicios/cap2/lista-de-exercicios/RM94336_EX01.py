@@ -7,9 +7,37 @@ Silver -- 20%
 Gold -- 10%
 Platinum -- 5%
 """
-print('#'*50)
-print('Programa de calculo de bonus pelo tipo de cliente')
-print('#'*50)
+
+print()
+cabecalho = ' Programa de calculo de bonus pelo tipo de cliente '
+print('#'*100, f'\n{cabecalho:#^100}')
+print('#'*100,'\n')
+opcoes = 'Opçoes de assinatura: Basic (30%) - Silver (20%) - Gold (10%) - Platinum (5%)\n'
+print(opcoes.center(100))
+
 assinatura = input('Digite o tipo de assinatura do cliente: ')
-assinatura.capitalize()
-print('Opçoes: Basic - Silver - Gold - Platinum')
+a = assinatura.capitalize()
+faturamento = input('Digite o faturamento anual do cliente: ')
+f = float(faturamento)
+
+print()
+if a == 'Platinum':
+    bonus = f * 0.05
+    print(f'O cliente tem a assinatura {a}, faturou no ano R$ {f:.2f} e seu bonus é de R$ {bonus:.2f}')
+
+elif a == 'Gold':
+    bonus = f * 0.1
+    print(f'O cliente tem a assinatura {a}, faturou no ano R$ {f:.2f} e seu bonus é de R$ {bonus:.2f}')
+
+elif a == 'Silver':
+    bonus = f * 0.2
+    print(f'O cliente tem a assinatura {a}, faturou no ano R$ {f:.2f} e seu bonus é de R$ {bonus:.2f}')
+
+elif a == 'Basic':
+    bonus = f * 0.3
+    print(f'O cliente tem a assinatura {a}, faturou no ano R$ {f:.2f} e seu bonus é de R$ {bonus:.2f}')
+
+else:
+    print('Você digitou uma assinatura não existente')
+
+print()    
