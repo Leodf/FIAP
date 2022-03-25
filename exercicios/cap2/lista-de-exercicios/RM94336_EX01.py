@@ -37,6 +37,4 @@ elif a == 'Basic':
     print(f'O cliente tem a assinatura {a}, faturou no ano R$ {f:.2f} e seu bonus é de R$ {bonus:.2f}')
 
 else:
-    print('Você digitou uma assinatura não existente')
-
-print()    
+    print('Você digitou uma assinatura não existente\n')    
