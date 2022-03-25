@@ -6,12 +6,12 @@ dias_da_semana = ['segunda-feira','terça-feira', 'quarta-feira', 'quinta-feira'
 voto = []
 
 for i in dias_da_semana:
-    informe = input(f'informe quantos votos {i} ganhou: ')
+    informe = input(f'\ninforme quantos votos {i} ganhou: ')
     voto.append(int(informe))
 
 for j, valor in enumerate(voto):
     if valor == max(voto):
-        print(f'{dias_da_semana[j]} é o melhor dia para fazer Live de acordo com a turma')
+        print(f'\n{dias_da_semana[j]} é o melhor dia para fazer Live de acordo com a turma\n')
         break
 
 
