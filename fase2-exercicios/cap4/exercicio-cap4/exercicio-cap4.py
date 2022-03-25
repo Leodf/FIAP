@@ -67,3 +67,17 @@ while op!=5:
 #Quando o looping terminar de rodar, exibir essa mensagem
 print("OK! O programa está encerrado...")
 """
+# exercicio 9
+"""
+resultado = 2 + 5 / 2
+final = resultado - (resultado * (10/100))
+print(resultado)
+print(final)
+"""
+lista = [0,5,10,15,5,10,20]  
+
+print(lista.count(5))
+
+lista = [0,2,4,8,16,32,64,128]  
+
+print(len(lista))
