@@ -1,28 +1,7 @@
-import random
+from gerador_data_e_dados import gerar_data, gerar_dados_classificados
 
-def gerar_dados_classificados():
-    
-    inteiro = random.randint(1, len(tipos_de_dados))
-    dados_aleatorios = random.sample(tipos_de_dados, k=inteiro)
-    dados_aleatorios.sort()
+tipos_de_dados = ['senha', 'ajuda de senha', 'telefone', 'nome', 'email',]
 
-    dados = []
-    for i in dados_aleatorios:
-        for j in i:
-            if type(j) is str:
-                dados.append(j)
-
-    return dados
-
-
-def gerar_data():
-    dia = random.randint(1, 31)
-    mes = random.randint(1, 12)
-    ano = random.randint(1990, 2022)
-
-    return f'{dia}/{mes}/{ano}'
-
-tipos_de_dados = [[0, 'senha'], [1, 'ajuda de senha'], [2, 'telefone'], [3, 'nome'], [4,'email'],]
 empresas = ['Apple', 'Microsoft', 'Facebook', 'Google', 'Amazon', 'Shoppe', 'Pentagono', 'Tim']
 
 lista = []
@@ -33,9 +12,34 @@ for empresa in empresas:
     variavel.extend(b)
     lista.append(variavel)
 
+#### Algoritmo para ordenar pela criticidade dos dados
+i = 0
+j = 0
 
-for i in lista:
-    print(i)
+for l, k in enumerate(tipos_de_dados):
+    
+    contador = len(tipos_de_dados)
+    while contador > 0:
+        
+        if j >= len(lista):
+            j = 0
+
+        while j < len(lista):
+
+            if i == len(lista) - 1:
+                break 
+
+            if lista[j][2] == k and len(lista[j]) - 2 == contador - l:
+                lista[j], lista[i] = lista[i], lista[j]
+                i += 1
+                j += 1
+            else:
+                j += 1
+                 
+        contador -= 1 
+    
+for j in lista:
+    print(j)
 
 
 
