@@ -26,13 +26,15 @@
     ['17/3/2000', 'Band', 'senha', 'ajuda de senha','telefone', 'nome', 'email'],
 ] """
 
+
 lista = [
-    ['21/7/2011', 'Microsoft', 'ajuda de senha', 'telefone', 'nome', 'email'],
-    ['29/10/2006', 'Pentagono', 'senha', 'ajuda de senha', 'telefone', 'nome'],
-    ['29/12/2010', 'Shoppe', 'ajuda de senha'],
-    ['29/10/2006', 'silvester', 'ajuda de senha', 'telefone'],
-    ['29/12/2010', 'Amazon', 'senha', 'telefone'],
-    ['21/7/2011', 'Tecsul', 'senha'],
+    [[2022, 7, 10], 'Microsoft', 'ajuda de senha', 'telefone', 'nome', 'email'],
+    [[2021, 6, 11], 'Pentagono', 'senha', 'ajuda de senha', 'telefone', 'nome'],
+    [[2011, 5, 12], 'Shoppe', 'ajuda de senha', 'telefone'],
+    [[2011, 6, 12], 'Claro', 'ajuda de senha', 'email'],
+    [[2011, 4, 13], 'Vivo', 'ajuda de senha', 'nome'],
+    [[1995, 3, 14], 'Amazon', 'senha', 'telefone'],
+    [[2011, 2, 15], 'Tecsul', 'senha'],
 ]
 
 tipos_de_dados = ['senha', 'ajuda de senha', 'telefone', 'nome', 'email']
@@ -57,15 +59,19 @@ for l, k in enumerate(tipos_de_dados):
                     ordena_data.append(d)
                     ordena_data.sort(reverse=True)
                     j += 1
-
                 else:
                     j += 1
                     
             contador -= 1
             
             for r in ordena_data:
-                ordem.append(r)
-
+                if len(ordena_data) == 0 or len(ordena_data) == 1:
+                    ordem.append(r)
+                else:
+                    if r[-1][0][1] > r[0][0][1]:
+                        r[-1], r[0] = r[0], r[-1]
+                        ordem.append(r)
+                    
 
 for j in lista:
     print(j)
