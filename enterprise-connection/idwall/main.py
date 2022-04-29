@@ -1,8 +1,10 @@
-from gerador_data_e_dados import gerar_data, gerar_dados_classificados
+from gerador_data_e_dados import gerar_data, gerar_dados_classificados, definir_tipo_de_dados
 
-tipos_de_dados = ['senha', 'ajuda de senha', 'telefone', 'nome', 'email',]
+
 
 empresas = ['Apple', 'Microsoft', 'Facebook', 'Google', 'Amazon', 'Shoppe', 'Pentagono', 'Tim']
+tipos_de_dados = definir_tipo_de_dados()
+
 
 lista = []
 for empresa in empresas:
