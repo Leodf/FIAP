@@ -27,19 +27,17 @@ for l, k in enumerate(tipos_de_dados):
             ordena_data = []
             while j < len(lista):
                 
-                 
-
                 if lista[j][2] == k and len(lista[j]) - 2 == contador - l:
                     d = lista[j]
                     ordena_data.append(d)
-                    
+                    ordena_data.sort(reverse=True)
                     j += 1
 
                 else:
                     j += 1
                     
             contador -= 1
-            ordena_data.sort(reverse=True)
+            
             for r in ordena_data:
                 ordem.append(r)
 

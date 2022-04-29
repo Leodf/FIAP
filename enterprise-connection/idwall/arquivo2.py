@@ -35,37 +35,42 @@ lista = [
     ['21/7/2011', 'Tecsul', 'senha'],
 ]
 
-tipos_de_dados = ['senha', 'ajuda de senha','telefone', 'nome', 'email']
+tipos_de_dados = ['senha', 'ajuda de senha', 'telefone', 'nome', 'email']
 
 i = 0
 j = 0
 
+ordem = []
 for l, k in enumerate(tipos_de_dados):
     
     contador = len(tipos_de_dados)
     while contador > 0:
         
-        if j >= len(lista):
-            j = 0
+            if j >= len(lista):
+                    j = 0
 
-        while j < len(lista):
-            print(f'\n{lista[j]}\n')
+            ordena_data = []
+            while j < len(lista):
+                
+                if lista[j][2] == k and len(lista[j]) - 2 == contador - l:
+                    d = lista[j]
+                    ordena_data.append(d)
+                    ordena_data.sort(reverse=True)
+                    j += 1
 
-            if i == len(lista) - 1:
-                break 
+                else:
+                    j += 1
+                    
+            contador -= 1
+            
+            for r in ordena_data:
+                ordem.append(r)
 
-            if lista[j][2] == k and len(lista[j]) - 2 == contador - l:
-                lista[j], lista[i] = lista[i], lista[j]
-                i += 1
-                j += 1
-                for m in lista:
-                    print(m)
-                
-            else:
-                j += 1
-                
-                
-        contador -= 1 
-    
+
 for j in lista:
     print(j)
+print()
+for c in ordem:
+    print(c)
+
+print(len(lista) == len(ordem))
