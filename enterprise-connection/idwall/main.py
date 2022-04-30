@@ -34,6 +34,7 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
                     ordena_data.sort(reverse=True)
                     linha += 1
                     
+                    
                 else:
                     linha += 1
                     

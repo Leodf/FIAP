@@ -14,9 +14,9 @@ lista = [
     [[2014, 3, 28], 'Tesla', 'senha', 'ajuda de senha', 'nome'],
     [[2017, 1, 11], 'SpaceX', 'telefone', 'nome', 'email'],
     [[2012, 8, 23], 'China', 'ajuda de senha'],
-    [[2004, 5, 11], 'Orkut', 'senha', 'ajuda de senha', 'telefone', 'nome', 'email'],
-    [[2013, 7, 14], 'Tio da padaria', 'senha'],
-    [[2004, 8, 16], 'ze da esquina', 'senha', 'ajuda de senha', 'nome', 'email'],
+    [[2011, 5, 11], 'Orkut', 'senha', 'ajuda de senha'],
+    [[2011, 7, 14], 'Tio da padaria', 'senha', 'ajuda de senha'],
+    [[2011, 8, 16], 'ze da esquina', 'senha', 'ajuda de senha'],
 ]
 
 lista_prioridade = ['senha', 'ajuda de senha', 'telefone', 'nome', 'email']
@@ -39,7 +39,9 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
                     ordena_data.append(lista[linha])
                     ordena_data.sort(reverse=True)
                     linha += 1
-                    
+                    if ordena_data[0][2] == valor_prioridade[0]:
+                        pass
+
                 else:
                     linha += 1
                     
