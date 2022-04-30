@@ -1,7 +1,7 @@
 from gerador_data_e_dados import gerar_data, gerar_dados_classificados, definir_tipo_de_dados
 
 
-empresas = ['Apple', 'Microsoft', 'Facebook', 'Google', 'Amazon', 'Shoppe', 'Pentagono', 'Tim']
+empresas = ['Apple', 'Microsoft', 'Facebook', 'Google', 'Amazon', 'Shoppe', 'Pentagono', 'Tim', 'Tecsul', 'SKA', 'Tesla', 'SpaceX', 'China', 'Orkut', 'Tio da padaria', 'ze da esquina']
 
 lista = []
 for empresa in empresas:
