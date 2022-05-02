@@ -21,8 +21,10 @@ lista = [
 
 lista_prioridade = ['senha', 'ajuda de senha', 'telefone', 'nome', 'email']
 
+#### Algoritmo para ordenar pela criticidade dos dados
+
 linha = 0
-ordem = []
+valores_ordenados = []
 for indice, valor_prioridade in enumerate(lista_prioridade):
 
     contador = len(lista_prioridade)
@@ -48,11 +50,11 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
             for i, valor_linha in enumerate(ordena_data):
                 if ordena_data[0][0][1] < ordena_data[i][0][1]:
                     ordena_data[0], ordena_data[i] = ordena_data[i], ordena_data[0]
-                    ordem.append(valor_linha)
+                    valores_ordenados.append(valor_linha)
                 else:
-                    ordem.append(valor_linha)
+                    valores_ordenados.append(valor_linha)
                     
 print()
-for k, j in enumerate(ordem):
+for k, j in enumerate(valores_ordenados):
     a, b, *resto = j
     print(f'A empresa {b} ficou em {k+1}º lugar, os dados vazados foram {resto} vazou os dados em {a[2]}/{a[1]}/{a[0]}')
