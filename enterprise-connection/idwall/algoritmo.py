@@ -26,6 +26,7 @@ ordem = []
 for indice, valor_prioridade in enumerate(lista_prioridade):
 
     contador = len(lista_prioridade)
+
     while contador > 0:
         
             if linha >= len(lista):
@@ -58,4 +59,5 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
 # print()
 
 for j in ordem:
-    print(j)
+    a, b, *resto = j
+    print(f'A empresa {b}, os dados vazados foram {resto} vazou os dados em {a[2]}/{a[1]}/{a[0]}')
