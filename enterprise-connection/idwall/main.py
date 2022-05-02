@@ -40,8 +40,13 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
                     
             contador -= 1
             
-            for valor_linha in ordena_data:
-                ordem.append(valor_linha)
+            for i, valor_linha in enumerate(ordena_data):
+                if ordena_data[0][0][1] < ordena_data[i][0][1]:
+                    ordena_data[0], ordena_data[i] = ordena_data[i], ordena_data[0]
+                    ordem.append(valor_linha)
+                    print(ordena_data)
+                else:
+                    ordem.append(valor_linha)
                     
 
 for i in lista:
