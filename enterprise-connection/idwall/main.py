@@ -44,15 +44,9 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
                 if ordena_data[0][0][1] < ordena_data[i][0][1]:
                     ordena_data[0], ordena_data[i] = ordena_data[i], ordena_data[0]
                     ordem.append(valor_linha)
-                    print(ordena_data)
                 else:
                     ordem.append(valor_linha)
                     
-
-for i in lista:
-    print(i)
-
-print()
 
 for j in ordem:
     print(j)
