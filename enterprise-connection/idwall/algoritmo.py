@@ -52,12 +52,7 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
                 else:
                     ordem.append(valor_linha)
                     
-
-# for i in lista:
-#     print(i)
-
-# print()
-
-for j in ordem:
+print()
+for k, j in enumerate(ordem):
     a, b, *resto = j
-    print(f'A empresa {b}, os dados vazados foram {resto} vazou os dados em {a[2]}/{a[1]}/{a[0]}')
+    print(f'A empresa {b} ficou em {k+1}º lugar, os dados vazados foram {resto} vazou os dados em {a[2]}/{a[1]}/{a[0]}')
