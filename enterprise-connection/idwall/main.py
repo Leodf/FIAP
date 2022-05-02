@@ -13,10 +13,11 @@ for empresa in empresas:
     lista.append(variavel)
 
 #### Algoritmo para ordenar pela criticidade dos dados
-lista_prioridade = definir_tipo_de_dados()
 
+lista_prioridade = definir_tipo_de_dados()
 linha = 0
-ordem = []
+valores_ordenados = []
+
 for indice, valor_prioridade in enumerate(lista_prioridade):
     
     contador = len(lista_prioridade)
@@ -34,7 +35,6 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
                     ordena_data.sort(reverse=True)
                     linha += 1
                     
-                    
                 else:
                     linha += 1
                     
@@ -43,19 +43,10 @@ for indice, valor_prioridade in enumerate(lista_prioridade):
             for i, valor_linha in enumerate(ordena_data):
                 if ordena_data[0][0][1] < ordena_data[i][0][1]:
                     ordena_data[0], ordena_data[i] = ordena_data[i], ordena_data[0]
-                    ordem.append(valor_linha)
+                    valores_ordenados.append(valor_linha)
                 else:
-                    ordem.append(valor_linha)
+                    valores_ordenados.append(valor_linha)
                     
 
-for j in ordem:
+for j in valores_ordenados:
     print(j)
-
-print(len(lista) == len(ordem))
-
-
-
-
-
-
-
