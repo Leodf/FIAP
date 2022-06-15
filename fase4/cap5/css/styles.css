@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+.primary-bg-color {
+    background-color: #252525;
+}
+
+.secondary-bg-color {
+    background-color: #C09578;
+}
+
+.light-bg-color {
+   background-color: #FCF5EB; 
+}
+
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.primary-color {
+    color: #C09578;
+}
+
+.secondary-color {
+    color: #626262;
+}
+
+.light-color {
+    color: #fcf5eb;
+}
+
+header {
+    height: auto;
+    color: #FCF5EB;
+}
+
+.container {
+    border: 5px dotted blue;
+    padding: 10px;
+}
+
+.row {
+    border: 5px solid purple;
+    padding: 10px;
+    margin: 0;
+}
+.col {
+    border: 2px dashed red;
+}
+
+#foto-perfil {
+    position: relative;
+    top: 150px;
+    background-color: #C09578;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+}
