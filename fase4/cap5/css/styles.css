@@ -15,19 +15,35 @@
 }
 
 .light-bg-color {
-   background-color: #FCF5EB; 
+   background-color: #FFF; 
 }
 
 .dark-bg-color {
-    background-color: #101010;
+    background-color: #303030;
 }
 
 .primary-color {
-    color: #C09578;
+    color: #369FFF;
+}
+
+.primary-bg-red {
+    color: #F23847;
+}
+
+.primary-bg-green {
+    color: #8AC53E;
+}
+
+.primary-bg-yellow {
+    color: #FFD143;
 }
 
 .secondary-color {
-    color: #626262;
+    color: #BDBDBD;
+}
+
+.dark-color {
+    color: #303030;
 }
 
 .light-color {
@@ -37,18 +53,30 @@
 #header {
     height: auto;
     color: #FCF5EB;
-    position: absolute;
+
 }
 
-
-
-#header h1 {
-    font-size: 7em;
-    text-align: end;
-}
+/* HEADER */
 
 #header .row {
     height: auto;
+}
+
+#header h1 {
+    font-size: 7em;
+}
+
+#header .btn {
+    position: relative;
+    top: 125px;
+}
+
+#header .btn-outline-dark:hover {
+    background-color: #369FFF;
+}
+
+#header .btn-outline-dark:hover > i {
+    color: #FFF;
 }
 
 #header .circle {
@@ -85,4 +113,15 @@
         text-align: center;
         margin-top: 20px;
     }
+}
+
+/* INFORMAÇÕES PESSOAIS */
+
+#dados-pessoais {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#dados-pessoais .form-check {
+    margin-left: 11px;
 }

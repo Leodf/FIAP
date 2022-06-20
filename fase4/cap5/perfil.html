@@ -14,15 +14,65 @@
     <title>Perfil</title>
 </head>
 <body>
-    <header class="container-fluid primary-bg-color" id="header">
+    <!-- HEADER -->
+    <header class="container-fluid dark-bg-color" id="header">
         <div class="row justify-content-around">
             <div class="col-md-6 circle align-self-center" id="imagem">
             </div>
             <div class="col-md-6 align-self-center">
                 <h1>Meu Perfil</h1>
+                <button class="btn btn-lg btn-outline-dark light-bg-color me-3" type="button">
+                    <i class="bi bi-pencil-square primary-color"></i>
+                    <span>Editar cadastro</span>
+                </button>
+                <button class="btn btn-lg btn-outline-dark light-bg-color me-3" type="button">
+                    <i class="bi bi-house primary-color"></i>
+                    <span>Menu principal</span>
+                </button>
             </div>
         </div>
-        
     </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <form class="container-fluid justify-content-end">
+          
+        </form>
+    </nav>
+
+    <!-- INFORMAÇÕES PESSOAIS -->
+    <main class="container" id="dados-pessoais">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="inputNome" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" placeholder="Maria Silvester" aria-label="nome completo" disabled>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="inputEmail" class="form-label">E-mail de contato</label>
+                <input type="email" class="form-control" placeholder="maria.silvester@meuemail.com.br" aria-label="email" disabled>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="inputDatanasc" class="form-label">Data de Nascimento</label>
+                <input type="text" class="form-control" placeholder="25/07/1989" aria-label="data de nascimento" disabled>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="inputSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" placeholder="********" aria-label="senha" disabled>
+            </div>
+            <div class="row">
+                <label for="inputSenha" class="form-label">Gênero</label>
+                <div class="col-md-3 form-check">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                </div>
+                <div class="col-md-6 form-check">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
 </body>
 </html>
