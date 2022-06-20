@@ -4,6 +4,7 @@
 
 * {
     font-family: 'Manrope', sans-serif;
+    font-size: 24px;
 }
 
 .primary-bg-color {
@@ -59,7 +60,8 @@
 }
 
 #header h1 {
-    font-size: 10vw;
+    font-size: 9vw;
+    text-align: right;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -104,16 +106,31 @@
 
 /* NAVIGATION */
 
-#navigation .btn {
+#navigation .container {
+    padding: 0;
+}
+
+#navigation .nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#navigation .nav-item {
+    padding-left: 30px;
+    padding-bottom: 10px;
     position: relative;
     bottom: 5vh;
+}
+
+#navigation .btn {
     border: 1px solid #303030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
 }
 
 #navigation .btn > span {
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: 600;
 }
 
@@ -126,20 +143,29 @@
 }
 
 @media(max-width: 764px) {
+    #navigation .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #navigation .nav-item {
+        padding: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #navigation .btn > span {
+        font-size: 24px;
+    }
+
     #navigation .btn {
-        position: relative;
-        bottom: 5vh;
+        width: 100%;
         border: 1px solid #303030;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 6px;
     }
 }
 
-@media(max-width: 515px) {
-    #navigation .btn {
-        
-    }
-}
 
 /* INFORMAÇÕES PESSOAIS */
 
@@ -152,3 +178,8 @@
     margin-left: 11px;
 }
 
+@media(max-width: 764px) {
+    #dados-pessoais {
+        margin-top: 5vw;
+    }
+}
