@@ -50,25 +50,30 @@
     color: #fcf5eb;
 }
 
-#header {
-    height: auto;
-    color: #FCF5EB;
-
-}
-
 /* HEADER */
 
-#header .row {
-    height: auto;
+#header {
+    color: #FFF;
+    height: 25vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #header h1 {
-    font-size: 7em;
+    font-size: 10vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #header .btn {
     position: relative;
-    top: 125px;
+    top: 8vh;
+    border: 1px solid #303030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+#header .btn > span {
+    font-size: 1.12em;
+    font-weight: medium;
 }
 
 #header .btn-outline-dark:hover {
@@ -81,11 +86,12 @@
 
 #header .circle {
     display: block;
-    height: 25rem;
-    width: 25rem;
+    height: 30vw;
+    width: 30vw;
     border-radius: 50%;
     position: relative;
-    top: 175px;
+    top: 10vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #imagem {
@@ -95,15 +101,16 @@
     background-size: cover;
 }
 
-@media(max-width: 800px) {
-
-}
 
 @media(max-width: 764px) {
+    #header {
+        height: auto;
+    }
+
     #header .circle {
         margin-top: 20px;
-        height: 10rem;
-        width: 10rem;
+        height: 15rem;
+        width: 15rem;
         border-radius: 50%;
         position: unset;
     }
@@ -113,16 +120,22 @@
         text-align: center;
         margin-top: 20px;
     }
-    
+
 }
 
 /* INFORMAÇÕES PESSOAIS */
 
 #dados-pessoais {
-    margin-top: 200px;
+    margin-top: 250px;
     margin-bottom: 100px;
 }
 
 #dados-pessoais .form-check {
     margin-left: 11px;
+}
+
+@media(max-width: 764px) {
+    #dados-pessoais {
+        margin-top: 100px
+    }
 }
