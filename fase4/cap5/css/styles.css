@@ -72,8 +72,8 @@
 }
 
 #header .btn > span {
-    font-size: 1.12em;
-    font-weight: medium;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 #header .btn-outline-dark:hover {
