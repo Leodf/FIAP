@@ -11,10 +11,98 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gastos.css">
     <title>Gastos</title>
 </head>
 <body>
-    <h1>Pagina gastos</h1>
-    <a href="dashboard.html">voltar</a>
+    <!-- HEADER -->
+    <header class="d-flex justify-content-center container-fluid primary-bg-red" id="header">
+        <h1 class="align-self-center">Gastos</h1>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="container" id="navigation">
+        <ul class="nav">
+            <div class="nav-item">
+                <button class="btn btn-lg btn-outline-dark light-bg-color" type="button">
+                    <i class="bi bi-upload primary-red"></i>
+                    <span>Importar</span>
+                </button>
+                <button class="btn btn-lg btn-outline-dark light-bg-color" type="button">
+                    <i class="bi bi-download primary-red"></i>
+                    <span>Exportar</span>
+                </button>
+            </div>
+            <div class="nav-item">
+                <button class="btn btn-lg btn-outline-dark light-bg-color" type="button">
+                    <i class="bi bi-pencil-square primary-red"></i>
+                    <span>Novo Recebimento</span>
+                </button>
+                <a href="dashboard.html">
+                    <button class="btn btn-lg btn-outline-dark light-bg-color" type="submit">
+                        <i class="bi bi-house primary-red"></i>
+                        <span>Dashboard</span>
+                    </button>
+                </a>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- VISUALIZAÇÃO DADOS-->
+    <main class="container" id="tabela-receita">
+        <table class="table">
+            <thead class="table-head-bg-color">
+              <tr>
+                <th scope="col">Descrição</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Data</th>
+                <th scope="col">Valor</th>
+                <th class="text-center" scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-red"></i>Restaurante de luxo</td>
+                <td data-title="Categoria:"></i>Comida & Bebida</td>
+                <td data-title="Data:">05/04/2022</td>
+                <td data-title="Valor:" class="valor primary-orange">R$ 7.000,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-red"></i>Parcela Carro</td>
+                <td data-title="Categoria:">Veículo</td>
+                <td data-title="Data:">14/04/2022</td>
+                <td data-title="Valor:" class="valor primary-orange">R$ 3.500,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-red"></i>Parcela da Faculdade</td>
+                <td data-title="Categoria:">Estudos</td>
+                <td data-title="Data:">19/04/2022</td>
+                <td data-title="Valor:" class="valor primary-orange">R$ 1.300,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-red"></i>Café da manhã na Moca</td>
+                <td data-title="Categoria:">Comida & Bebida</td>
+                <td data-title="Data:">22/04/2022</td>
+                <td data-title="Valor:" class="valor primary-orange">R$ 2.000,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </main>
 </body>
 </html>

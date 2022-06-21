@@ -13,6 +13,13 @@
     background-position: top left, bottom right;
 }
 
+.primary-bg-red {
+    background-color: #F23847;
+    background-image: url(../img/vetorred1.svg), url(../img/vetorred2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
 .secondary-bg-color {
     background-color: #C09578;
 }
@@ -42,6 +49,10 @@
 
 .primary-yellow {
     color: #FFD143;
+}
+
+.primary-orange {
+    color: #FF993A;
 }
 
 .secondary-color {
