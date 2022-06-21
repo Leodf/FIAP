@@ -48,7 +48,7 @@
     color: #FFF;
 }
 
-@media(max-width: 764px) {
+@media(max-width: 1000px) {
     #navigation .nav {
         display: flex;
         align-items: center;
@@ -86,4 +86,50 @@
 #tabela-receita .excluir:hover {
     color: #E61022;
     font-weight: bold;
+}
+
+#tabela-receita .valor {
+    font-weight: bold;
+}
+
+#tabela-receita .row {
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    table tbody tr td {
+        display: block;
+        text-align: right;
+        position: relative;
+    }
+
+    table tbody tr td a {
+        display: block;
+        text-align: center;
+    }
+
+    table tbody tr td::before {
+        content: attr(data-title);
+        position: absolute;
+        left: 15px;
+        display: block;
+        color: #303030;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    table {
+        border: none;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        margin-bottom: 20px;
+        display: block;
+        border: 1px solid #dad6eb;
+    }
+
 }

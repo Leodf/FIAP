@@ -51,47 +51,55 @@
     <!-- VISUALIZAÇÃO DADOS-->
     <main class="container" id="tabela-receita">
         <table class="table">
-            <thead>
+            <thead class="table-head-bg-color">
               <tr>
                 <th scope="col">Descrição</th>
                 <th scope="col">Categoria</th>
                 <th scope="col">Data</th>
                 <th scope="col">Valor</th>
-                <th scope="col" colspan="2">Ação</th>
+                <th class="text-center" scope="col">Ação</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td scope="row">Recebimento de Salário</td>
-                <td>Salário</td>
-                <td>05/04/2022</td>
-                <td class="primary-green">R$ 7.000,00</td>
-                <td><a href="#" class="editar primary-color"><i class="bi bi-pencil-square"></i> Editar</a></td>
-                <td><a href="#" class="excluir primary-red"><i class="bi bi-trash3"></i> Excluir</a></td>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-color"></i>Recebimento de Salário</td>
+                <td data-title="Categoria:"></i>Salário</td>
+                <td data-title="Data:">05/04/2022</td>
+                <td data-title="Valor:" class="valor primary-green">R$ 7.000,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
               </tr>
               <tr>
-                <td scope="row">Prestação de Serviço</td>
-                <td>Freelance</td>
-                <td>14/04/2022</td>
-                <td class="primary-green">R$ 3.500,00</td>
-                <td><a href="#" class="editar primary-color"><i class="bi bi-pencil-square"></i> Editar</a></td>
-                <td><a href="#" class="excluir primary-red"><i class="bi bi-trash3"></i> Excluir</a></td>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-color"></i>Prestação de Serviço</td>
+                <td data-title="Categoria:">Freelance</td>
+                <td data-title="Data:">14/04/2022</td>
+                <td data-title="Valor:" class="valor primary-green">R$ 3.500,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
               </tr>
               <tr>
-                <td scope="row">Aluguel</td>
-                <td>Aluguel</td>
-                <td>19/04/2022</td>
-                <td class="primary-green">R$ 1.300,00</td>
-                <td><a href="#" class="editar primary-color"><i class="bi bi-pencil-square"></i> Editar</a></td>
-                <td><a href="#" class="excluir primary-red"><i class="bi bi-trash3"></i> Excluir</a></td>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-color"></i>Aluguel</td>
+                <td data-title="Categoria:">Aluguel</td>
+                <td data-title="Data:">19/04/2022</td>
+                <td data-title="Valor:" class="valor primary-green">R$ 1.300,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
               </tr>
               <tr>
-                <td scope="row">Retirada Poupança</td>
-                <td>Investimentos</td>
-                <td>22/04/2022</td>
-                <td class="primary-green">R$ 2.000,00</td>
-                <td><a href="#" class="editar primary-color"><i class="bi bi-pencil-square"></i> Editar</a></td>
-                <td><a href="#" class="excluir primary-red"><i class="bi bi-trash3"></i> Excluir</a></td>
+                <td scope="row" data-title="Descrição:"><i class="bi bi-dot primary-color"></i>Retirada Poupança</td>
+                <td data-title="Categoria:">Investimentos</td>
+                <td data-title="Data:">22/04/2022</td>
+                <td data-title="Valor:" class="valor primary-green">R$ 2.000,00</td>
+                <td class="row text-center">
+                    <a href="#" class="editar primary-color col"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="#" class="excluir primary-red col"><i class="bi bi-trash3"></i> Excluir</a>
+                </td>
               </tr>
             </tbody>
           </table>
