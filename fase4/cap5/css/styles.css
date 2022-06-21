@@ -85,20 +85,26 @@ body {
 }
 
 
-/* FORM */ 
+/* FORM PARA LOGIN E CADASTRO */ 
+
 
 #form-container {
     background-color: #FFF;
+    background-image: url(../img/vetorblue1.svg), url(../img/vetorblue2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
     border-radius: 20px;
     box-shadow: .5px 10px 15px rgba(0, 0, 0, .2);
-    margin: 25px auto;
-    padding: 25px;
 }
 
 @media(min-width: 768px) {
     #form-container {
-        margin: 50px auto;
+        margin: 25px auto;
         padding: 50px;
+    }
+
+    .login {
+        height: 90vh;
     }
 }
 
@@ -121,6 +127,7 @@ body {
 }
 
 #form-container .form-control {
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid #CCC;
     border-radius: 0;
