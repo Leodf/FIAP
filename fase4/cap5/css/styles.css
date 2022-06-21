@@ -20,7 +20,7 @@
 
 .dark-bg-color {
     background-color: #303030;
-    background-image: url(../img/vetor1.svg), url(../img/vetor2.svg);
+    background-image: url(../img/vetorblack1.svg), url(../img/vetorblack2.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
 }
