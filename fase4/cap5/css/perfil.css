@@ -140,6 +140,12 @@
     color: #222;
 }
 
+#dados-pessoais input[type="radio"]:checked {
+    background-color: #369FFF;
+    border-color: #369FFF;
+
+}
+
 @media(max-width: 764px) {
     #dados-pessoais {
         margin-top: 5vw;
