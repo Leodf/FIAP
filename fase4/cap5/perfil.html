@@ -49,35 +49,51 @@
     <!-- INFORMAÇÕES PESSOAIS -->
     <main class="container" id="dados-pessoais">
         <div class="row">
-            <div class="mb-3 col-md-6">
-                <label for="inputNome" class="form-label">Nome completo</label>
-                <input type="text" class="form-control" placeholder="Maria Silvester" aria-label="nome completo" disabled>
+            <div class="col-md-6">
+                <form>
+                    <p>Nome completo</p>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Maria Silvester" aria-label="nome completo">
+                        <label for="nome" class="form-label">Digite seu nome</label>
+                    </div>
+                    <p>E-mail de contato</p>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="maria.silvester@meuemail.com.br" aria-label="email">
+                        <label for="email" class="form-label">Digite seu E-mail</label>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3 col-md-6">
-                <label for="inputEmail" class="form-label">E-mail de contato</label>
-                <input type="email" class="form-control" placeholder="maria.silvester@meuemail.com.br" aria-label="email" disabled>
+            <div class="col-md-6">
+                <form>
+                    <p>Data de Nascimento</p>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="datanasc" name="datanasc" aria-label="data de nascimento">
+                        <label for="datanasc" class="form-label"></label>
+                    </div>
+                    <p>Senha</p>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="********" aria-label="senha">
+                        <label for="senha" class="form-label"></label> 
+                    </div>
+                </form>
             </div>
-            <div class="mb-3 col-md-6">
-                <label for="inputDatanasc" class="form-label">Data de Nascimento</label>
-                <input type="text" class="form-control" placeholder="25/07/1989" aria-label="data de nascimento" disabled>
-            </div>
-            <div class="mb-3 col-md-6">
-                <label for="inputSenha" class="form-label">Senha</label>
-                <div class="input-group">
-                    <input type="password" class="form-control" placeholder="********" aria-label="senha" disabled>
-                    <i class="bi bi-eye-slash input-group-text"></i>
-                </div> 
-            </div>
-            <div class="row">
-                <label for="inputSenha" class="form-label">Gênero</label>
-                <div class="col-md-3 form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="inlineRadio1" value="masculino" disabled>
-                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
-                </div>
-                <div class="col-md-6 form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="inlineRadio2" value="feminino" checked disabled>
-                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
-                </div>
+            <div class="col-md-6">
+                <form>
+                    <p>Genêro</p>
+                    <div class="d-flex form-floating mb-3">
+                        <label for="genero" class="form-label"></label>
+                        <div class="col-md-3 form-check">
+                            <input class="form-check-input" type="radio" name="genero" id="inlineRadio1" value="masculino">
+                            <label class="form-check-label" for="inlineRadio1"></label>
+                            <span>Masculino</span>
+                        </div>
+                        <div class="col-md-6 form-check">
+                            <input class="form-check-input" type="radio" name="genero" id="inlineRadio2" value="feminino">
+                            <label class="form-check-label" for="inlineRadio2"></label>
+                            <span>Feminino</span>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
