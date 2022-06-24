@@ -11,19 +11,41 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
     <h1>Pagina dashboard</h1>
-    <ul>
-        <li><a href="perfil.html">perfil</a></li>
-        <li><a href="gastos.html">gastos</a></li>
-        <li><a href="receita.html">receita</a></li>
-        <li><a href="investimentos.html">investimentos</a></li>
-        <li><a href="objfinanceiro.html">objetivo financeiro</a></li>
-        <li><a href="login.html">login</a></li>
-        <li><a href="cadastro.html">cadastro</a></li>
-
-    </ul>
+    <main class="container-fluid">
+        <div class="row">
+            <nav id="Menu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gastos.html">Gastos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="receita.html">Receita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="investimentos.html">Investimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="objfinanceiro.html">Objetivo Financeiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </main>
 </body>
 </html>
